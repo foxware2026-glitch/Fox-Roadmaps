@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Fox Roadmaps</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ============================================================
+         NAVIGATION
+         ============================================================ -->
+
+    <header class="navbar">
+
+        <a href="../index.html" class="logo" aria-label="Fox Roadmaps Home">
+            <img
+                src="../assets/images/fox-roadmaps-logo.svg"
+                alt="Fox Roadmaps Logo"
+            >
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <input
+            type="checkbox"
+            id="mobile-menu-toggle"
+            class="menu-checkbox"
+            aria-label="Toggle navigation menu"
+        >
+
+        <label
+            for="mobile-menu-toggle"
+            class="hamburger-trigger"
+            aria-label="Open navigation menu"
+        >
+            <i class="fa-solid fa-bars menu-icon-open"></i>
+            <i class="fa-solid fa-xmark menu-icon-close"></i>
+        </label>
+
+        <!-- Navigation Links -->
+        <nav class="nav-links" aria-label="Main Navigation">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="app.html">
+                App Dev
+            </a>
+
+            <a href="web.html">
+                Web Dev
+            </a>
+
+            <a href="game.html">
+                Game Dev
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html" class="active">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ============================================================
+         CONTACT PAGE
+         ============================================================ -->
+
+    <main class="contact-page">
+
+        <section class="contact-section">
+
+            <div class="contact-container">
+
+                <!-- ==================================================
+                     CONTACT INFORMATION
+                     ================================================== -->
+
+                <div class="contact-info scroll-reveal">
+
+                    <span class="section-eyebrow">
+                        GET IN TOUCH
+                    </span>
+
+                    <h1>
+                        Let's Build Something
+                        <span>Real.</span>
+                    </h1>
+
+                    <p>
+                        Have a question about a roadmap, need help with
+                        your learning path, or want to share feedback?
+                        Send us a message and we'll get back to you.
+                    </p>
+
+                    <div class="contact-details">
+
+                        <div class="contact-detail-item scroll-reveal">
+
+                            <div class="contact-detail-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div>
+                                <h3>Email</h3>
+
+                                <a
+                                    href="mailto:foxware2026@gmail.com"
+                                    class="contact-email"
+                                >
+                                    <span>foxware2026@gmail.com</span>
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-detail-item scroll-reveal">
+
+                            <div class="contact-detail-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+
+                            <div>
+                                <h3>Response Time</h3>
+
+                                <p>
+                                    Usually within 24–48 hours
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-detail-item scroll-reveal">
+
+                            <div class="contact-detail-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+
+                            <div>
+                                <h3>What We Help With</h3>
+
+                                <p>
+                                    Roadmaps, projects, learning &amp; feedback
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================================================
+                     CONTACT FORM
+                     ================================================== -->
+
+                <div class="contact-form-wrapper scroll-reveal">
+
+                    <form
+                        class="contact-form"
+                        id="fox-contact-form"
+                        name="fox-contact"
+                        method="POST"
+                        data-netlify="true"
+                        netlify
+                    >
+
+                        <!-- Required by Netlify for AJAX/form submissions -->
+                        <input
+                            type="hidden"
+                            name="form-name"
+                            value="fox-contact"
+                        >
+
+
+                        <!-- Full Name -->
+                        <div class="form-group">
+
+                            <label for="user-name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="user-name"
+                                name="name"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="form-group">
+
+                            <label for="user-email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="user-email"
+                                name="email"
+                                placeholder="fortune44chongo@gmail.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Subject -->
+                        <div class="form-group">
+
+                            <label for="user-subject">
+                                Subject
+                            </label>
+
+                            <input
+                                type="text"
+                                id="user-subject"
+                                name="subject"
+                                placeholder="What would you like to talk about?"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Message -->
+                        <div class="form-group">
+
+                            <label for="user-message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="user-message"
+                                name="message"
+                                rows="6"
+                                placeholder="Type your message here..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- Submit -->
+                        <button
+                            type="submit"
+                            class="btn-contact-submit"
+                        >
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+            <!-- Brand -->
+            <div class="footer-brand scroll-reveal">
+
+                <a
+                    href="../index.html"
+                    class="logo"
+                    aria-label="Fox Roadmaps Home"
+                >
+                    <img
+                        src="../assets/images/fox-roadmaps-logo.svg"
+                        alt="Fox Roadmaps Logo"
+                    >
+                </a>
+
+                <p>
+                    Your path to building real-world projects
+                    with easy-to-follow roadmaps.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-col scroll-reveal">
+
+                <h5>Quick Links</h5>
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="web.html">
+                            Web Dev
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="app.html">
+                            App Dev
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="game.html">
+                            Game Dev
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="active">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Resources -->
+            <div class="footer-col scroll-reveal">
+
+                <h5>Resources</h5>
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html#roadmap-container">
+                            Roadmaps
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="video/player.html">
+                            How it Works
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            FAQs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Blogs
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Legal -->
+            <div class="footer-col scroll-reveal">
+
+                <h5>Legal</h5>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Terms &amp; Conditions
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Refund Policy
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom scroll-reveal">
+
+            <div class="footer-social">
+
+                <div class="follow">
+                    <h3>Follow Us</h3>
+                </div>
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <p>
+                &copy; 2026 Fox Roadmaps. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ============================================================
+         SCRIPTS
+         ============================================================ -->
+
+    <script src="../data/roadmaps.js"></script>
+    <script src="../assets/js/roadmap-grid.js"></script>
+    <script src="../assets/js/scroll-animations.js"></script>
+
+</body>
+
+</html>
+
