@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Video Player | Fox Roadmaps</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="navbar">
+
+        <a href="../../index.html" class="logo" aria-label="Fox Roadmaps Home">
+
+            <img src="../../assets/images/fox-roadmaps-logo.svg" alt="Fox Roadmaps Logo">
+
+        </a>
+
+
+        <!-- Mobile menu control -->
+
+        <input type="checkbox" id="mobile-menu-toggle" class="menu-checkbox" aria-label="Toggle navigation menu">
+
+
+        <label for="mobile-menu-toggle" class="hamburger-trigger" aria-label="Open navigation menu">
+
+            <i class="fa-solid fa-bars menu-icon-open"></i>
+
+            <i class="fa-solid fa-xmark menu-icon-close"></i>
+
+        </label>
+
+
+        <!-- Navigation -->
+
+        <nav class="nav-links" aria-label="Main Navigation">
+
+            <a href="../../index.html">
+                Home
+            </a>
+
+            <a href="../app.html">
+                App Dev
+            </a>
+
+            <a href="../web.html">
+                Web Dev
+            </a>
+
+            <a href="../game.html">
+                Game Dev
+            </a>
+
+            <a href="../about.html">
+                About
+            </a>
+
+            <a href="../contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         VIDEO PLAYER PAGE
+    ========================== -->
+
+    <main class="video-page">
+
+        <section class="video-section">
+
+            <div class="video-container scroll-reveal">
+
+
+                <!-- Video Title -->
+
+                <div class="video-info scroll-reveal">
+
+                    <h1 id="video-title">
+                        How Fox Roadmaps Works
+                    </h1>
+
+                </div>
+
+
+                <!-- Video Player Container -->
+
+                <div class="video-player scroll-reveal">
+
+                    <!--
+                        Target anchor element for the
+                        YouTube IFrame API.
+                    -->
+
+                    <div id="player"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+
+            <!-- Brand -->
+
+            <div class="footer-brand scroll-reveal">
+
+                <a href="../../index.html" class="logo" aria-label="Fox Roadmaps Home">
+                    <img src="../../assets/images/fox-roadmaps-logo.svg" alt="Fox Roadmaps">
+                </a>
+
+                <p>
+                    Your path to building real-world projects
+                    with easy-to-follow roadmaps.
+                </p>
+
+            </div>
+
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-col scroll-reveal">
+
+                <h5>
+                    Quick Links
+                </h5>
+
+                <ul>
+
+                    <li>
+                        <a href="../../index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../web.html">
+                            Web Dev
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../app.html">
+                            App Dev
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../game.html">
+                            Game Dev
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- Resources -->
+
+            <div class="footer-col scroll-reveal">
+
+                <h5>
+                    Resources
+                </h5>
+
+                <ul>
+
+                    <li>
+                        <a href="../../index.html#roadmap-container">
+                            Roadmaps
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="player.html">
+                            How it Works
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../contact.html">
+                            FAQs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../contact.html">
+                            Blogs
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- Legal -->
+
+            <div class="footer-col scroll-reveal">
+
+                <h5>
+                    Legal
+                </h5>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Terms &amp; Conditions
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Refund Policy
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom  scroll-reveal">
+
+            <div class="footer-social">
+
+                <div class="follow">
+
+                    <h3>
+                        Follow Us
+                    </h3>
+
+                </div>
+
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <p>
+                &copy; 2026 Fox Roadmaps. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="../../data/roadmaps.js"></script>
+
+    <script src="../../assets/js/main.js"></script>
+
+    <script src="../../assets/js/video-player.js"></script>
+
+    <script src="../../assets/js/scroll-animations.js"></script>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+
+</body>
+
+</html>
