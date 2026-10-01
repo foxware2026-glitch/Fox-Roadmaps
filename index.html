@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fox Roadmaps | Build Real Projects, One Roadmap at a Time</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================== -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo" aria-label="Fox Roadmaps Home">
+
+        <img
+            src="assets/images/fox-roadmaps-logo.svg"
+            alt="Fox Roadmaps Logo"
+        >
+
+    </a>
+
+
+    <!-- Mobile menu control -->
+
+    <input
+        type="checkbox"
+        id="mobile-menu-toggle"
+        class="menu-checkbox"
+        aria-label="Toggle navigation menu"
+    >
+
+
+    <label
+        for="mobile-menu-toggle"
+        class="hamburger-trigger"
+        aria-label="Open navigation menu"
+    >
+
+        <i class="fa-solid fa-bars menu-icon-open"></i>
+
+        <i class="fa-solid fa-xmark menu-icon-close"></i>
+
+    </label>
+
+
+    <nav class="nav-links" aria-label="Main Navigation">
+
+        <a href="index.html" class="active">
+            Home
+        </a>
+
+        <a href="pages/app.html">
+            App Dev
+        </a>
+
+        <a href="pages/web.html">
+            Web Dev
+        </a>
+
+        <a href="pages/game.html">
+            Game Dev
+        </a>
+
+        <a href="pages/about.html">
+            About
+        </a>
+
+        <a href="pages/contact.html">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO SECTION
+========================================================== -->
+
+<header class="hero">
+
+    <div class="hero-container">
+
+
+        <div class="hero-text scroll-reveal">
+
+            <h2>
+                Build Real World Projects,
+                <span>One Roadmap <br>at a Time</span>
+            </h2>
+
+
+            <div class="p">
+
+                <p class="hero-p">
+                    Fox Roadmaps provides step-by-step learning paths
+                    with timestamped tutorials so that you can learn
+                    how to build real world projects.
+                </p>
+
+            </div>
+
+
+            <a
+                href="pages/video/player.html"
+                class="btn-watch-demo"
+            >
+                Watch Demo
+            </a>
+
+        </div>
+
+
+
+        <div class="hero-image scroll-reveal">
+
+            <img
+                src="assets/images/hero-books.png"
+                alt="Fox Roadmaps Books Collection"
+            >
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     DISCOVER ROADMAPS
+========================================================== -->
+
+<section class="discover">
+
+
+    <h3 class="scroll-reveal">
+        Discover Roadmaps
+    </h3>
+
+
+    <p class="discover-desc scroll-reveal">
+
+        Explore step-by-step roadmaps designed to help you build
+        real-world projects using practical technologies and
+        guided tutorials.
+
+    </p>
+
+
+
+    <!-- Search -->
+
+    <div class="search-container scroll-reveal">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            id="roadmap-search"
+            class="search-input"
+            placeholder="Search Roadmaps..."
+            aria-label="Search roadmaps"
+        >
+
+    </div>
+
+
+
+    <!-- Roadmap cards are injected by JavaScript -->
+
+    <div
+        id="roadmap-container"
+        class="roadmap-grid"
+    ></div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-grid">
+
+
+        <!-- Brand -->
+
+        <div class="footer-brand scroll-reveal">
+
+            <a href="index.html" class="logo">
+
+                <img
+                    src="assets/images/fox-roadmaps-logo.svg"
+                    alt="Fox Roadmaps Logo"
+                >
+
+            </a>
+
+            <p>
+                Your path to building real-world projects
+                with easy-to-follow roadmaps.
+            </p>
+
+        </div>
+
+
+
+        <!-- Quick Links -->
+
+        <div class="footer-col scroll-reveal">
+
+            <h5>Quick Links</h5>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pages/web.html">
+                        Web Dev
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pages/app.html">
+                        App Dev
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pages/game.html">
+                        Game Dev
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pages/about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pages/contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- Resources -->
+
+        <div class="footer-col scroll-reveal">
+
+            <h5>Resources</h5>
+
+            <ul>
+
+                <li>
+                    <a href="#roadmap-container">
+                        Roadmaps
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pages/video/player.html">
+                        How it Works
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pages/contact.html">
+                        FAQs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pages/contact.html">
+                        Blogs
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- Legal -->
+
+        <div class="footer-col scroll-reveal">
+
+            <h5>Legal</h5>
+
+            <ul>
+
+                <li>
+                    <a href="#">
+                        Terms &amp; Conditions
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Refund Policy
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Footer bottom -->
+
+    <div class="footer-bottom  scroll-reveal">
+
+        <div class="footer-social">
+
+            <div class="follow">
+
+                <h3>
+                    Follow Us
+                </h3>
+
+            </div>
+
+
+            <div class="social-links">
+
+    <a href="https://www.facebook.com/share/19Q8D1mED6/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="https://www.instagram.com/foxroadmaps?stkn=M2kxNWNkbmU3ZzRv"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="#"
+       aria-label="X">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+
+</div>
+
+        </div>
+
+
+        <p>
+            &copy; 2026 Fox Roadmaps. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     SCRIPTS
+========================================================== -->
+
+<script src="data/roadmaps.js"></script>
+
+<script src="assets/js/roadmap-grid.js"></script>
+
+<script src="assets/js/scroll-animations.js"></script>
+
+
+</body>
+
+</html>
